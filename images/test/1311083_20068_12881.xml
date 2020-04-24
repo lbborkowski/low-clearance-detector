@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>1311083_20068_12881.jpg</filename>
+	<path>/home/lbborkowski/low-clearance-detector/images/test/1311083_20068_12881.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3072</width>
+		<height>1728</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>low-clearance-sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2107</xmin>
+			<ymin>935</ymin>
+			<xmax>2241</xmax>
+			<ymax>1070</ymax>
+		</bndbox>
+	</object>
+</annotation>

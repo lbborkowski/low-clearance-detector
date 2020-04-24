@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>1162845_29c05_37.jpg</filename>
+	<path>/home/lbborkowski/low-clearance-detector/images/train/1162845_29c05_37.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2592</width>
+		<height>1936</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>low-clearance-sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1457</xmin>
+			<ymin>1326</ymin>
+			<xmax>1527</xmax>
+			<ymax>1397</ymax>
+		</bndbox>
+	</object>
+</annotation>

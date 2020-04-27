@@ -1,5 +1,5 @@
 # low-clearance-detector
-Custom object detection model for low clearance signs
+*Custom object detection model for low clearance signs*
 
 Launch the Jupyter notebook in Google Colab by clicking on this badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lbborkowski/low-clearance-detector/blob/master/low_clearance_detector_200426.ipynb)
 

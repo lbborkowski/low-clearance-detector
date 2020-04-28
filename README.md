@@ -15,10 +15,13 @@ The model was trained on 125 images taken from [OpenStreetCam](https://openstree
 ![](/READMEimages/train_01.png) ![](/READMEimages/train_02.png) ![](/READMEimages/train_11.png) ![](/READMEimages/train_04.png) ![](/READMEimages/train_06.png) ![](/READMEimages/train_07.png) ![](/READMEimages/train_08.png) ![](/READMEimages/train_10.png)
 > *Figure 1: Selection of labeled training images*
 
-Transfer learning was employed for the custom object detection model by starting with a pre-trained model. The model architecture used was faster_rcnn_inception_v2 trained on the COCO dataset, obtained from the [TensorFlow Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). A faster rcnn based model was chosen in order to maintain the aspect ratio of the images (ssd-based models resize all images to 300 x 300 pixels). A total of 6500 steps/epochs is required to train the model. When run using Google Colab, training takes about 20 minutes. 
+Transfer learning was employed for the custom object detection model by starting with a pre-trained model. The model architecture used was faster_rcnn_inception_v2 trained on the COCO dataset, obtained from the [TensorFlow Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). A faster rcnn based model was chosen in order to maintain the aspect ratio of the images (ssd-based models resize all images to 300 x 300 pixels). A total of 6500 steps/epochs is required to train the model. When run using Google Colab, training takes about 20 minutes. A plot of the loss verses epoch, obtained using TensorBoard, is shown in Figure 2.
+
+![](/READMEimages/loss_plot.png)
+> *Figure 2: Loss vs. epoch during training of custom low clearance sign detector*
 
 ## Inference
-Following training, inference was performed on a set of 6 images. These images were excluded from the training and test sets and were taken from a unique bridge along the Merritt Parkway (i.e., no training or test images were taken from this bridge). The output from inference is shown in Figure 2. It can be seen that the low clearance signs in all 6 images are correctly detected and classified.
+Following training, inference was performed on a set of 6 images. These images were excluded from the training and test sets and were taken from a unique bridge along the Merritt Parkway (i.e., no training or test images were taken from this bridge). The output from inference is shown in Figure 3. It can be seen that the low clearance signs in all 6 images are correctly detected and classified.
 
 ![](/READMEimages/valid_1.png) ![](/READMEimages/valid_2.png) ![](/READMEimages/valid_3.png) ![](/READMEimages/valid_4.png) ![](/READMEimages/valid_5.png) ![](/READMEimages/valid_6.png)
-> *Figure 2: Custom object detection model inference output*
+> *Figure 3: Custom object detection model inference output*
